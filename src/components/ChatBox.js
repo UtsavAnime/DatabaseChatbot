@@ -10,7 +10,7 @@ class ChatBox extends Component {
 
     fetchData = async (text) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/data', {
+            const response = await axios.post('https://chatbotbackend-n5ag.onrender.com/api/data', {
                 message: text
             });
             console.log(response, "response");
