@@ -38,7 +38,7 @@ def get_data():
         # if __name__ == "__main__":
         #     main()
     llm = OpenAI(
-            openai_api_key='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', temperature=0)
+            openai_api_key='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', temperature=0)
 
     db_chain = SQLDatabaseChain(llm=llm, database=db, verbose=True, prompt=PROMPT)
     data = request.json
